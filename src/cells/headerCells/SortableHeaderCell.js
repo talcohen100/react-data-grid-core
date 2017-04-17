@@ -11,8 +11,7 @@ const SortableHeaderCell = React.createClass({
     columnKey: React.PropTypes.string.isRequired,
     column: React.PropTypes.shape({ name: React.PropTypes.node }),
     onSort: React.PropTypes.func.isRequired,
-    sortDirection: React.PropTypes.oneOf(Object.keys(DEFINE_SORT)),
-    headerRenderer: React.PropTypes.node
+    sortDirection: React.PropTypes.oneOf(Object.keys(DEFINE_SORT))
   },
 
   onClick: function() {
